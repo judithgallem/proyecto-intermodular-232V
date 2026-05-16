@@ -8,11 +8,11 @@ Grupo servidor: 8
 
 ---
 
-<details>
-<summary><strong>0. Preparaci&#243;n del informe y criterio de entrega</strong></summary>
+
+## 0. Preparaci&#243;n del informe y criterio de entrega
 
 <details>
-<summary><strong>Implementaci&#243;n</strong></summary>
+<summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
 - [ ] Crear carpeta de trabajo para capturas con nombres por apartado del informe
   - **Entregable:** docs/informe/capturas/
@@ -26,7 +26,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Validaci&#243;n</strong></summary>
+<summary><strong>FASE - Validaci&#243;n</strong></summary>
 
 - [ ] Revisar que cada captura usa FQDN cuando el informe pide imagen de una URL
   - **Informe:** Instrucciones de la plantilla
@@ -38,7 +38,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Informe</strong></summary>
+<summary><strong>FASE - Informe</strong></summary>
 
 - [ ] Rellenar portada: fecha, nombre, host de virtualizaci&#243;n, grupo y puesto de aula
   - **Informe:** Cabecera del informe
@@ -49,14 +49,10 @@ Grupo servidor: 8
 
 </details>
 
-
-</details>
-
-<details>
-<summary><strong>1. Inventario VMware y nombrado de m&#225;quinas virtuales</strong></summary>
+## 1. Inventario VMware y nombrado de m&#225;quinas virtuales
 
 <details>
-<summary><strong>Implementaci&#243;n</strong></summary>
+<summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
 - [ ] Comprobar que todas las m&#225;quinas siguen la nomenclatura con sufijo ID
   - **Informe:** Nombrado de m&#225;quinas virtuales
@@ -70,7 +66,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Validaci&#243;n</strong></summary>
+<summary><strong>FASE - Validaci&#243;n</strong></summary>
 
 - [ ] Capturar inventario completo de vCenter con todas las VM visibles
   - **Captura:** vCenter / carpeta proyecto
@@ -80,7 +76,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Informe</strong></summary>
+<summary><strong>FASE - Informe</strong></summary>
 
 - [ ] Pegar inventario de m&#225;quinas virtuales
   - **Informe:** Nombrado de m&#225;quinas virtuales
@@ -89,14 +85,10 @@ Grupo servidor: 8
 
 </details>
 
-
-</details>
-
-<details>
-<summary><strong>2. Router Zentyal ROUTER01-ID, red, DHCP, NAT y VPN</strong></summary>
+## 2. Router Zentyal ROUTER01-ID, red, DHCP, NAT y VPN
 
 <details>
-<summary><strong>Implementaci&#243;n</strong></summary>
+<summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
 - [ ] Revisar configuraci&#243;n b&#225;sica de ROUTER01-ID
   - **Comando:** hostnamectl; lsb_release -a; cat /etc/hostname; cat /etc/hosts; ip address
@@ -118,7 +110,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Validaci&#243;n</strong></summary>
+<summary><strong>FASE - Validaci&#243;n</strong></summary>
 
 - [ ] Validar conexi&#243;n VPN desde EXTERNA01-ID
   - **Comando:** ipconfig /all
@@ -134,7 +126,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Informe</strong></summary>
+<summary><strong>FASE - Informe</strong></summary>
 
 - [ ] Pegar comandos de configuraci&#243;n b&#225;sica de ROUTER01-ID
   - **Informe:** Router Zentyal ROUTER01-ID, configuraci&#243;n b&#225;sica
@@ -147,14 +139,10 @@ Grupo servidor: 8
 
 </details>
 
-
-</details>
-
-<details>
-<summary><strong>3. Active Directory, DNS interno, UO, usuarios, grupos y GPO</strong></summary>
+## 3. Active Directory, DNS interno, UO, usuarios, grupos y GPO
 
 <details>
-<summary><strong>Implementaci&#243;n</strong></summary>
+<summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
 - [ ] Revisar que DC01-ID es controlador principal y tiene volumen DATOS
   - **Captura:** Administraci&#243;n de discos y ADUC / Domain Controllers
@@ -187,7 +175,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Validaci&#243;n</strong></summary>
+<summary><strong>FASE - Validaci&#243;n</strong></summary>
 
 - [ ] Ejecutar winver en cada controlador de dominio
   - **Comando:** winver
@@ -207,7 +195,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Informe</strong></summary>
+<summary><strong>FASE - Informe</strong></summary>
 
 - [ ] Pegar Domain Controllers con DC01-ID y DC02-ID
   - **Informe:** Controladores de dominio
@@ -226,14 +214,10 @@ Grupo servidor: 8
 
 </details>
 
-
-</details>
-
-<details>
-<summary><strong>4. Estaciones Windows y Linux integradas en dominio</strong></summary>
+## 4. Estaciones Windows y Linux integradas en dominio
 
 <details>
-<summary><strong>Implementaci&#243;n</strong></summary>
+<summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
 - [ ] Integrar WS01-ID y WS02-ID en el dominio
   - **Captura:** Propiedades del sistema o panel de dominio
@@ -247,7 +231,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Validaci&#243;n</strong></summary>
+<summary><strong>FASE - Validaci&#243;n</strong></summary>
 
 - [ ] Ejecutar winver en cada estaci&#243;n Windows
   - **Comando:** winver
@@ -264,7 +248,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Informe</strong></summary>
+<summary><strong>FASE - Informe</strong></summary>
 
 - [ ] Pegar winver de estaciones Windows
   - **Informe:** Estaciones de trabajo Windows: versi&#243;n del sistema operativo
@@ -277,14 +261,10 @@ Grupo servidor: 8
 
 </details>
 
-
-</details>
-
-<details>
-<summary><strong>5. LAMP01-ID, Docker, Nginx, bases de datos y aplicaciones web</strong></summary>
+## 5. LAMP01-ID, Docker, Nginx, bases de datos y aplicaciones web
 
 <details>
-<summary><strong>Implementaci&#243;n</strong></summary>
+<summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
 - [ ] Revisar RAID-1 del sistema y RAID-5 de datos en LAMP01-ID
   - **Comando:** cat /proc/mdstat; cat /etc/mdadm/mdadm.conf; cat /etc/fstab; ls -al /mnt/raid5/
@@ -314,7 +294,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Validaci&#243;n</strong></summary>
+<summary><strong>FASE - Validaci&#243;n</strong></summary>
 
 - [ ] Probar acceso por FQDN a p&#225;gina principal
   - **Captura:** https://asi-232v.cifpaviles.com
@@ -334,7 +314,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Informe</strong></summary>
+<summary><strong>FASE - Informe</strong></summary>
 
 - [ ] Pegar particionamiento, RAID y enlaces de LAMP01-ID
   - **Informe:** Particionamiento de servidor LAMP01-ID
@@ -351,14 +331,10 @@ Grupo servidor: 8
 
 </details>
 
-
-</details>
-
-<details>
-<summary><strong>6. Moodle</strong></summary>
+## 6. Moodle
 
 <details>
-<summary><strong>Implementaci&#243;n</strong></summary>
+<summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
 - [ ] Verificar versi&#243;n y entorno de Moodle
   - **Captura:** Administraci&#243;n del sitio / Servidor / Entorno
@@ -376,7 +352,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Validaci&#243;n</strong></summary>
+<summary><strong>FASE - Validaci&#243;n</strong></summary>
 
 - [ ] Probar login de Moodle con usuario LDAP
   - **Captura:** Sesi&#243;n iniciada con URL visible
@@ -388,7 +364,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Informe</strong></summary>
+<summary><strong>FASE - Informe</strong></summary>
 
 - [ ] Pegar versi&#243;n instalada y ajustes de portada
   - **Informe:** Aplicaci&#243;n Moodle: versi&#243;n instalada y ajustes de la p&#225;gina principal
@@ -399,14 +375,10 @@ Grupo servidor: 8
 
 </details>
 
-
-</details>
-
-<details>
-<summary><strong>7. WordPress</strong></summary>
+## 7. WordPress
 
 <details>
-<summary><strong>Implementaci&#243;n</strong></summary>
+<summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
 - [ ] Terminar configuraci&#243;n LDAP de WordPress
   - **Captura:** Plugin LDAP o configuraci&#243;n usada
@@ -422,7 +394,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Validaci&#243;n</strong></summary>
+<summary><strong>FASE - Validaci&#243;n</strong></summary>
 
 - [ ] Probar acceso por FQDN a WordPress
   - **Captura:** https://wordpress.asi-232v.cifpaviles.com
@@ -434,7 +406,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Informe</strong></summary>
+<summary><strong>FASE - Informe</strong></summary>
 
 - [ ] Pegar acceso a WordPress por nombre DNS
   - **Informe:** Servidor LAMP01-ID: Acceso a aplicaciones web por nombre DNS
@@ -443,14 +415,10 @@ Grupo servidor: 8
 
 </details>
 
-
-</details>
-
-<details>
-<summary><strong>8. Servicio DNS externo</strong></summary>
+## 8. Servicio DNS externo
 
 <details>
-<summary><strong>Implementaci&#243;n</strong></summary>
+<summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
 - [ ] Configurar reenviadores del DNS externo
   - **Comando:** cat /etc/bind/named.conf.options
@@ -464,7 +432,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Validaci&#243;n</strong></summary>
+<summary><strong>FASE - Validaci&#243;n</strong></summary>
 
 - [ ] Validar resoluci&#243;n de FQDN p&#250;blicos desde cliente
   - **Comando:** nslookup wordpress.asi-232v.cifpaviles.com; nslookup moodle.asi-232v.cifpaviles.com; nslookup inventario.asi-232v.cifpaviles.com
@@ -474,7 +442,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Informe</strong></summary>
+<summary><strong>FASE - Informe</strong></summary>
 
 - [ ] Pegar named.conf.options
   - **Informe:** Servicio DNS externo: reenviadores
@@ -485,14 +453,10 @@ Grupo servidor: 8
 
 </details>
 
-
-</details>
-
-<details>
-<summary><strong>9. vSphere, ESXi y permisos</strong></summary>
+## 9. vSphere, ESXi y permisos
 
 <details>
-<summary><strong>Implementaci&#243;n</strong></summary>
+<summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
 - [ ] Configurar hipervisores HV01-ID y HV02-ID
   - **Captura:** Interfaz web de cada host con usuario root y URL visible
@@ -522,7 +486,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Validaci&#243;n</strong></summary>
+<summary><strong>FASE - Validaci&#243;n</strong></summary>
 
 - [ ] Validar acceso web a cada host ESXi con root
   - **Captura:** Pantalla principal con URL visible
@@ -536,7 +500,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Informe</strong></summary>
+<summary><strong>FASE - Informe</strong></summary>
 
 - [ ] Pegar accesos web a hosts, appliance 5480 y vCenter 443
   - **Informe:** Acceso web a hosts, appliance y vCenter
@@ -551,14 +515,10 @@ Grupo servidor: 8
 
 </details>
 
-
-</details>
-
-<details>
-<summary><strong>10. SSH sin contrase&#241;a y scripts bash</strong></summary>
+## 10. SSH sin contrase&#241;a y scripts bash
 
 <details>
-<summary><strong>Implementaci&#243;n</strong></summary>
+<summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
 - [ ] Dise&#241;ar infraestructura de claves SSH: clientes, servidores y usuarios
   - **Informe:** Descripci&#243;n de la infraestructura SSH
@@ -574,7 +534,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Validaci&#243;n</strong></summary>
+<summary><strong>FASE - Validaci&#243;n</strong></summary>
 
 - [ ] Entrar por SSH sin petici&#243;n de contrase&#241;a
   - **Comando:** ssh usuario@servidor hostname
@@ -585,21 +545,17 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Informe</strong></summary>
+<summary><strong>FASE - Informe</strong></summary>
 
 - [ ] Pegar descripci&#243;n, claves generadas, ubicaciones, captura de acceso y scripts bash
   - **Informe:** Infraestructura de clave p&#250;blica/privada para acceso ssh sin contrase&#241;a
 
 </details>
 
-
-</details>
-
-<details>
-<summary><strong>11. Azure y t&#250;nel con on-premises</strong></summary>
+## 11. Azure y t&#250;nel con on-premises
 
 <details>
-<summary><strong>Implementaci&#243;n</strong></summary>
+<summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
 - [ ] Crear o revisar grupos de recursos necesarios
   - **Captura:** Grupo de recursos / Informaci&#243;n general
@@ -633,7 +589,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Validaci&#243;n</strong></summary>
+<summary><strong>FASE - Validaci&#243;n</strong></summary>
 
 - [ ] Validar rutas del t&#250;nel VPN en ambos routers
   - **Comando:** ip route en ROUTER02-ID y ROUTER01-ID
@@ -647,7 +603,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Informe</strong></summary>
+<summary><strong>FASE - Informe</strong></summary>
 
 - [ ] Pegar grupos de recursos, IP p&#250;blicas, red virtual, subredes, VM, NSG y rutas
   - **Informe:** Azure: recursos base
@@ -660,14 +616,10 @@ Grupo servidor: 8
 
 </details>
 
-
-</details>
-
-<details>
-<summary><strong>12. Sincronizaci&#243;n horaria</strong></summary>
+## 12. Sincronizaci&#243;n horaria
 
 <details>
-<summary><strong>Implementaci&#243;n</strong></summary>
+<summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
 - [ ] Configurar sincronizaci&#243;n horaria de controladores de dominio
   - **Comando:** w32tm /query /status; w32tm /query /configuration
@@ -683,7 +635,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Validaci&#243;n</strong></summary>
+<summary><strong>FASE - Validaci&#243;n</strong></summary>
 
 - [ ] Comprobar que DC, Linux, ESXi, vCenter y Zentyal tienen hora coherente
   - **Captura:** Salidas o pantallas de cada sistema
@@ -691,21 +643,17 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Informe</strong></summary>
+<summary><strong>FASE - Informe</strong></summary>
 
 - [ ] Pegar evidencias de sincronizaci&#243;n horaria de todos los sistemas solicitados
   - **Informe:** Sincronizaci&#243;n horaria
 
 </details>
 
-
-</details>
-
-<details>
-<summary><strong>13. FILER01-ID, SMB, NFS, unidades y perfiles</strong></summary>
+## 13. FILER01-ID, SMB, NFS, unidades y perfiles
 
 <details>
-<summary><strong>Implementaci&#243;n</strong></summary>
+<summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
 - [ ] Configurar pools y datasets en FILER01-ID
   - **Captura:** Storage / Pools desplegado con datasets
@@ -721,7 +669,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Validaci&#243;n</strong></summary>
+<summary><strong>FASE - Validaci&#243;n</strong></summary>
 
 - [ ] Abrir \\FILER01-ID\usuarios$ desde explorador
   - **Captura:** Contenido del recurso compartido
@@ -737,7 +685,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Informe</strong></summary>
+<summary><strong>FASE - Informe</strong></summary>
 
 - [ ] Pegar pools, datasets y recursos SMB
   - **Informe:** FILER01-ID: Pools y datasets; Recursos compartidos SMB
@@ -748,14 +696,10 @@ Grupo servidor: 8
 
 </details>
 
-
-</details>
-
-<details>
-<summary><strong>14. Esquemas y documentaci&#243;n t&#233;cnica</strong></summary>
+## 14. Esquemas y documentaci&#243;n t&#233;cnica
 
 <details>
-<summary><strong>Implementaci&#243;n</strong></summary>
+<summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
 - [ ] Crear esquema Visio de red interna, conexi&#243;n externa e Internet
   - **Entregable:** docs/esquemas/red/
@@ -773,7 +717,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Validaci&#243;n</strong></summary>
+<summary><strong>FASE - Validaci&#243;n</strong></summary>
 
 - [ ] Comprobar que los esquemas coinciden con IP, nombres y puertos reales
 - [ ] Comprobar que cada esquema exportado se abre correctamente
@@ -781,21 +725,17 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Informe</strong></summary>
+<summary><strong>FASE - Informe</strong></summary>
 
 - [ ] Incluir esquemas en la documentaci&#243;n de infraestructura y en el comprimido final
   - **Entregable:** docs/esquemas/
 
 </details>
 
-
-</details>
-
-<details>
-<summary><strong>15. Entregables finales y ZIP</strong></summary>
+## 15. Entregables finales y ZIP
 
 <details>
-<summary><strong>Implementaci&#243;n</strong></summary>
+<summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
 - [ ] Crear carpeta ra&#237;z: Entrega proyecto final m&#243;dulo ASIR Nombre y apellidos
   - **Entregable:** Carpeta ra&#237;z del ZIP
@@ -827,7 +767,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Validaci&#243;n</strong></summary>
+<summary><strong>FASE - Validaci&#243;n</strong></summary>
 
 - [ ] Verificar que no se incluyen contrase&#241;as reales, claves privadas ni secretos en el ZIP
 - [ ] Verificar que no se sube c&#243;digo fuente de Moodle o WordPress salvo configuraci&#243;n propia necesaria
@@ -838,7 +778,7 @@ Grupo servidor: 8
 </details>
 
 <details>
-<summary><strong>Informe</strong></summary>
+<summary><strong>FASE - Informe</strong></summary>
 
 - [ ] Exportar informe principal a PDF con el nombre exigido
   - **Entregable:** Proyecto_intermodular_2ASIR.informe.Nombre y apellidos.pdf
@@ -847,6 +787,4 @@ Grupo servidor: 8
 
 </details>
 
-
-</details>
 

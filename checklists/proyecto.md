@@ -58,21 +58,21 @@
 <details>
 <summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
-- [ ] Revisar configuraci&#243;n b&#225;sica de ROUTER01-ID
+- [x] Revisar configuraci&#243;n b&#225;sica de ROUTER01-ID
   - **Comando:** hostnamectl; lsb_release -a; cat /etc/hostname; cat /etc/hosts; ip address
-- [ ] Documentar mapeo de interfaces f&#237;sicas y l&#243;gicas
+- [x] Documentar mapeo de interfaces f&#237;sicas y l&#243;gicas
   - **Informe:** Router Zentyal ROUTER01-ID, configuraci&#243;n b&#225;sica
-- [ ] Comprobar archivo de red usado por Zentyal
+- [x] Comprobar archivo de red usado por Zentyal
   - **Comando:** cat /etc/network/interfaces o cat /etc/netplan/*.yaml
-- [ ] Crear o revisar objetos DHCP con IP y MAC de clientes
+- [x] Crear o revisar objetos DHCP con IP y MAC de clientes
   - **Captura:** Zentyal / Red / Objetos / Listas de objetos / Miembros
-- [ ] Configurar DHCP con DNS internos para los clientes
+- [x] Configurar DHCP con DNS internos para los clientes
   - **Comando:** cat /etc/dhcp/dhcpd.conf
-- [ ] Configurar puertas de enlace, reglas de cortafuegos y NAT
+- [x] Configurar puertas de enlace, reglas de cortafuegos y NAT
   - **Captura:** Zentyal / Red / Puertas de enlace; Cortafuegos; Redirecciones de puertos
-- [ ] Configurar NAT 3389 hacia WS01-ID como acceso alternativo
+- [x] Configurar NAT 3389 hacia WS01-ID como acceso alternativo
   - **Captura:** Zentyal / Cortafuegos / Redirecciones de puertos
-- [ ] Configurar VPN de acceso remoto para EXTERNA01-ID
+- [x] Configurar VPN de acceso remoto para EXTERNA01-ID
   - **Captura:** Zentyal / VPN / Servidores / Configuraci&#243;n
 
 </details>
@@ -80,15 +80,15 @@
 <details>
 <summary><strong>FASE - Validaci&#243;n</strong></summary>
 
-- [ ] Validar conexi&#243;n VPN desde EXTERNA01-ID
+- [x] Validar conexi&#243;n VPN desde EXTERNA01-ID
   - **Comando:** ipconfig /all
   - **Captura:** Cliente Windows con VPN establecida
-- [ ] Validar rutas remotas anunciadas al cliente VPN
+- [x] Validar rutas remotas anunciadas al cliente VPN
   - **Comando:** route print
   - **Captura:** Cliente Windows con VPN establecida
-- [ ] Probar acceso SSH/RDP por IP 172 desde EXTERNA01-ID mediante VPN
+- [x] Probar acceso SSH/RDP por IP 172 desde EXTERNA01-ID mediante VPN
   - **Comando:** ssh usuario@IP o mstsc /v:IP
-- [ ] Comprobar que los clientes reciben DNS internos por DHCP
+- [x] Comprobar que los clientes reciben DNS internos por DHCP
   - **Comando:** ipconfig /all o resolvectl status
 
 </details>
@@ -112,21 +112,21 @@
 <details>
 <summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
-- [ ] Revisar que DC01-ID es controlador principal y tiene volumen DATOS
+- [x] Revisar que DC01-ID es controlador principal y tiene volumen DATOS
   - **Captura:** Administraci&#243;n de discos y ADUC / Domain Controllers
-- [ ] Revisar que DC02-ID est&#225; promocionado como segundo controlador
+- [x] Revisar que DC02-ID est&#225; promocionado como segundo controlador
   - **Captura:** ADUC / Domain Controllers
-- [ ] Comprobar RAID-1 o particionamiento de DC02-ID
+- [x] Comprobar RAID-1 o particionamiento de DC02-ID
   - **Captura:** Administraci&#243;n de discos
-- [ ] Recrear o revisar UO equipos, usuarios y moodleroles tras el script viejo
+- [x] Recrear o revisar UO equipos, usuarios y moodleroles tras el script viejo
   - **Captura:** ADUC con View / Users, Contacts, Groups and Computers as containers
-- [ ] Revisar grupos base: usuariosASI-ID, empresa, gestion, tecnicos, N1, N2, N3, admins, clientes
+- [x] Revisar grupos base: usuariosASI-ID, empresa, gestion, tecnicos, N1, N2, N3, admins, clientes
   - **Captura:** Propiedades General, Miembros y Miembro de por grupo
-- [ ] Revisar grupos de Moodle en UO moodleroles
+- [x] Revisar grupos de Moodle en UO moodleroles
   - **Captura:** General y Miembros de cada grupo moodleroles
 - [ ] Revisar grupos de vCenter e hipervisores
   - **Captura:** admins de vcenter, usuarios de vcenter, usuariosHV01-ID, usuariosHV02-ID y grupos .usu1-.usu4
-- [ ] Configurar o reparar GPO de contrase&#241;as simples
+- [x] Configurar o reparar GPO de contrase&#241;as simples
   - **Captura:** GPMC / GPO / Configuraci&#243;n / Mostrar todo
 - [ ] Configurar o reparar GPO de administraci&#243;n remota
   - **Captura:** GPMC / GPO / Configuraci&#243;n / Mostrar todo
@@ -135,9 +135,9 @@
 - [ ] Preparar despliegue de CA/certificado ra&#237;z a equipos mediante GPO o script
   - **Comando:** certutil -addstore -f Root ruta\certificado.cer
   - **Nota:** Priorizar GPO: Computer Configuration / Policies / Windows Settings / Security Settings / Public Key Policies / Trusted Root Certification Authorities.
-- [ ] Configurar zonas DNS directas e inversas, registros host y PTR
+- [x] Configurar zonas DNS directas e inversas, registros host y PTR
   - **Captura:** Consola DNS con zona directa, zonas inversas y registros
-- [ ] Configurar reenviadores DNS internos en cada DC
+- [x] Configurar reenviadores DNS internos en cada DC
   - **Captura:** Consola DNS / Propiedades del servidor / Reenviadores
 
 </details>
@@ -187,11 +187,11 @@
 <details>
 <summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
-- [ ] Integrar WS01-ID y WS02-ID en el dominio
+- [x] Integrar WS01-ID y WS02-ID en el dominio
   - **Captura:** Propiedades del sistema o panel de dominio
 - [ ] Agregar grupo empresa a usuarios de escritorio remoto por GPO o localmente
   - **Captura:** Usuarios de escritorio remoto
-- [ ] Integrar WS03-ID Linux en el dominio
+- [x] Integrar WS03-ID Linux en el dominio
   - **Comando:** realm list o equivalente usado
 - [ ] Configurar cifrado de datos de usuarios en estaci&#243;n Linux
   - **Comando:** cat /etc/fstab; lsblk -f; blkid /dev/sdb1
@@ -201,14 +201,14 @@
 <details>
 <summary><strong>FASE - Validaci&#243;n</strong></summary>
 
-- [ ] Ejecutar winver en cada estaci&#243;n Windows
+- [x] Ejecutar winver en cada estaci&#243;n Windows
   - **Comando:** winver
-- [ ] Capturar configuraci&#243;n IP de cada estaci&#243;n Windows
+- [x] Capturar configuraci&#243;n IP de cada estaci&#243;n Windows
   - **Comando:** ipconfig /all
   - **Captura:** TCP-IP / Propiedades e ipconfig /all
-- [ ] Capturar configuraci&#243;n b&#225;sica de WS03-ID
+- [x] Capturar configuraci&#243;n b&#225;sica de WS03-ID
   - **Comando:** hostnamectl; lsb_release -a; cat /etc/hostname; cat /etc/hosts; cat /etc/netplan/*.yaml; cat /etc/resolv.conf; resolvectl status | tail -n 5; ip address
-- [ ] Probar inicio de sesi&#243;n con usuarios de dominio en WS01-ID, WS02-ID y WS03-ID
+- [x] Probar inicio de sesi&#243;n con usuarios de dominio en WS01-ID, WS02-ID y WS03-ID
   - **Captura:** Sesi&#243;n iniciada o whoami/id
 - [ ] Probar RDP a WS01-ID y WS02-ID con usuario del grupo empresa
   - **Comando:** mstsc /v:WS01-ID o mstsc /v:IP
@@ -234,43 +234,41 @@
 <details>
 <summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
-- [ ] Revisar RAID-1 del sistema y RAID-5 de datos en LAMP01-ID
+- [x] Revisar RAID-1 del sistema y RAID-5 de datos en LAMP01-ID
   - **Comando:** cat /proc/mdstat; cat /etc/mdadm/mdadm.conf; cat /etc/fstab; ls -al /mnt/raid5/
-- [ ] Comprobar enlaces simb&#243;licos de servicios ubicados en RAID-5
+- [x] Comprobar enlaces simb&#243;licos de servicios ubicados en RAID-5
   - **Comando:** ls -al enlace_simbolico_a_raid
-- [ ] Revisar configuraci&#243;n b&#225;sica de LAMP01-ID
+- [x] Revisar configuraci&#243;n b&#225;sica de LAMP01-ID
   - **Comando:** hostnamectl; lsb_release -a; cat /etc/hostname; cat /etc/hosts; cat /etc/netplan/*.yaml; cat /etc/resolv.conf; resolvectl status | tail -n 5; ip address
 - [ ] Comprobar servicios web, PHP, MySQL y phpMyAdmin o justificar equivalencia Docker/Nginx
   - **Comando:** dpkg -l apache2 php libapache2-mod-php php-mysql mysql-server phpmyadmin
-- [ ] Comprobar extensiones PHP necesarias
+- [x] Comprobar extensiones PHP necesarias
   - **Comando:** dpkg -l php-intl php-xmlrpc php-soap php-ldap
-- [ ] Revisar estado de contenedores
+- [x] Revisar estado de contenedores
   - **Comando:** docker ps; docker compose ps
-- [ ] Revisar compose, redes Docker, segmentos, hostnames internos y puertos mapeados
+- [x] Revisar compose, redes Docker, segmentos, hostnames internos y puertos mapeados
   - **Entregable:** archivos/docker/docker-compose.yml y docs/esquemas/red/docker
-- [ ] Revisar Nginx Reverse Proxy y certificados por FQDN
+- [x] Revisar Nginx Reverse Proxy y certificados por FQDN
   - **Comando:** cat /mnt/raid5/infra/nginx/conf.d/default.conf
-- [ ] Revisar acceso a phpMyAdmin y tablas por cada aplicaci&#243;n
+- [x] Revisar acceso a phpMyAdmin y tablas por cada aplicaci&#243;n
   - **Captura:** phpMyAdmin con bases de datos y tablas
-- [ ] Revisar cuentas MySQL y privilegios espec&#237;ficos por aplicaci&#243;n
+- [x] Revisar cuentas MySQL y privilegios espec&#237;ficos por aplicaci&#243;n
   - **Captura:** phpMyAdmin / Cuentas de usuarios / Privilegios espec&#237;ficos
 - [ ] Preparar triggers, procedimientos y funciones SQL con ejemplos
   - **Entregable:** scripts/sql/DDL y scripts/sql/DML; inventario/triggers_procedimientos_funciones.sql
-- [ ] Separar c&#243;digo propio de inventario de aplicaciones no propias
-  - **Entregable:** apps/inventario/
 
 </details>
 
 <details>
 <summary><strong>FASE - Validaci&#243;n</strong></summary>
 
-- [ ] Probar acceso por FQDN a p&#225;gina principal
+- [x] Probar acceso por FQDN a p&#225;gina principal
   - **Captura:** https://asi-232v.cifpaviles.com
-- [ ] Probar acceso por FQDN a inventario
+- [x] Probar acceso por FQDN a inventario
   - **Captura:** https://inventario.asi-232v.cifpaviles.com
-- [ ] Probar acceso por FQDN a Moodle
+- [x] Probar acceso por FQDN a Moodle
   - **Captura:** https://moodle.asi-232v.cifpaviles.com
-- [ ] Probar acceso por FQDN a WordPress
+- [x] Probar acceso por FQDN a WordPress
   - **Captura:** https://wordpress.asi-232v.cifpaviles.com
 - [ ] Validar que los certificados son confiables en clientes tras desplegar CA
   - **Captura:** Candado/certificado del navegador
@@ -304,17 +302,17 @@
 <details>
 <summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
-- [ ] Verificar versi&#243;n y entorno de Moodle
+- [x] Verificar versi&#243;n y entorno de Moodle
   - **Captura:** Administraci&#243;n del sitio / Servidor / Entorno
-- [ ] Revisar ajustes de p&#225;gina principal
+- [x] Revisar ajustes de p&#225;gina principal
   - **Captura:** Nombre completo, nombre corto y descripci&#243;n
-- [ ] Revisar identificaci&#243;n LDAP
+- [x] Revisar identificaci&#243;n LDAP
   - **Informe:** Copiar como texto URL host, DN, contextos, atributos y data mapping
-- [ ] Revisar matriculaciones LDAP ya configuradas
+- [x] Revisar matriculaciones LDAP ya configuradas
   - **Informe:** Copiar como texto URL, usuario de enlace, mapeos de roles, contextos, atributos y plantilla
-- [ ] Revisar cursos en categor&#237;a Documentos
+- [x] Revisar cursos en categor&#237;a Documentos
   - **Captura:** Administrar cursos y categor&#237;as / Documentos
-- [ ] Revisar usuarios visibles en Moodle
+- [x] Revisar usuarios visibles en Moodle
   - **Captura:** Usuarios / Cuentas / Examinar lista de usuarios
 
 </details>
@@ -324,9 +322,9 @@
 
 - [ ] Probar login de Moodle con usuario LDAP
   - **Captura:** Sesi&#243;n iniciada con URL visible
-- [ ] Validar que los roles LDAP matriculan en cursos/categor&#237;as esperadas
+- [x] Validar que los roles LDAP matriculan en cursos/categor&#237;as esperadas
   - **Captura:** Participantes o matriculaciones del curso
-- [ ] Ejecutar o revisar script moodle_roles.ps1 si se usa para grupos
+- [x] Ejecutar o revisar script moodle_roles.ps1 si se usa para grupos
   - **Comando:** Get-Content scripts/powershell/moodle_roles.ps1
 
 </details>
@@ -348,23 +346,25 @@
 <details>
 <summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
+- [x] Inicio con slideshow creado y menús
+- [ ] Actividad y tienda creada con galerías de producto, cuenta, carrito
+- [x] Quiénes somos, Contactar, FAQ
+- [x] Dos idiomas, Foro y Blog
 - [ ] Terminar configuraci&#243;n LDAP de WordPress
   - **Captura:** Plugin LDAP o configuraci&#243;n usada
 - [ ] Configurar apartado Actividad
   - **Captura:** P&#225;gina o men&#250; Actividad visible
 - [ ] Configurar apartado Tienda
   - **Captura:** P&#225;gina o plugin de tienda visible
-- [ ] Revisar configuraci&#243;n wp-config.php y conexi&#243;n con base de datos
+- [x] Revisar configuraci&#243;n wp-config.php y conexi&#243;n con base de datos
   - **Comando:** cat infra/images/wordpress/html/wp-config.php
-- [ ] Revisar que no se entrega c&#243;digo fuente propio de WordPress salvo configuraci&#243;n necesaria
-  - **Entregable:** archivos/docker/wordpress y no apps/wordpress
 
 </details>
 
 <details>
 <summary><strong>FASE - Validaci&#243;n</strong></summary>
 
-- [ ] Probar acceso por FQDN a WordPress
+- [x] Probar acceso por FQDN a WordPress
   - **Captura:** https://wordpress.asi-232v.cifpaviles.com
 - [ ] Probar login LDAP en WordPress
   - **Captura:** Usuario LDAP autenticado
@@ -388,13 +388,13 @@
 <details>
 <summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
-- [ ] Configurar reenviadores del DNS externo
+- [x] Configurar reenviadores del DNS externo
   - **Comando:** cat /etc/bind/named.conf.options
-- [ ] Configurar definici&#243;n de zonas
+- [x] Configurar definici&#243;n de zonas
   - **Comando:** cat /etc/bind/named.conf.local
-- [ ] Configurar zona directa del dominio externo
+- [x] Configurar zona directa del dominio externo
   - **Comando:** cat /etc/bind/db.asi-ID.cifpaviles.com
-- [ ] Configurar zona inversa externa
+- [x] Configurar zona inversa externa
   - **Comando:** cat /etc/bind/db.GRUPO.SERVIDOR.10
 
 </details>
@@ -402,9 +402,9 @@
 <details>
 <summary><strong>FASE - Validaci&#243;n</strong></summary>
 
-- [ ] Validar resoluci&#243;n de FQDN p&#250;blicos desde cliente
+- [x] Validar resoluci&#243;n de FQDN p&#250;blicos desde cliente
   - **Comando:** nslookup wordpress.asi-232v.cifpaviles.com; nslookup moodle.asi-232v.cifpaviles.com; nslookup inventario.asi-232v.cifpaviles.com
-- [ ] Validar zona inversa externa
+- [x] Validar zona inversa externa
   - **Comando:** nslookup IP_PUBLICA_O_RED_EXTERNA
 
 </details>
@@ -525,13 +525,13 @@
 <details>
 <summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
-- [ ] Crear o revisar grupos de recursos necesarios
+- [x] Crear o revisar grupos de recursos necesarios
   - **Captura:** Grupo de recursos / Informaci&#243;n general
-- [ ] Crear o revisar IP p&#250;blicas con nombre DNS asociado
+- [x] Crear o revisar IP p&#250;blicas con nombre DNS asociado
   - **Captura:** Direcci&#243;n IP p&#250;blica / Informaci&#243;n general
-- [ ] Crear red virtual y espacio de direcciones
+- [x] Crear red virtual y espacio de direcciones
   - **Captura:** Red virtual / Informaci&#243;n general
-- [ ] Crear subredes de Azure
+- [x] Crear subredes de Azure
   - **Captura:** Red virtual / Configuraci&#243;n / Subredes
 - [ ] Crear m&#225;quinas virtuales necesarias: ROUTER02-ID, LAMP02-ID y dem&#225;s si aplica
   - **Captura:** M&#225;quina virtual / Informaci&#243;n general / Informaci&#243;n esencial
@@ -589,15 +589,15 @@
 <details>
 <summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
-- [ ] Configurar sincronizaci&#243;n horaria de controladores de dominio
+- [x] Configurar sincronizaci&#243;n horaria de controladores de dominio
   - **Comando:** w32tm /query /status; w32tm /query /configuration
-- [ ] Configurar sincronizaci&#243;n horaria de sistemas Linux
+- [x] Configurar sincronizaci&#243;n horaria de sistemas Linux
   - **Comando:** systemctl status systemd-timesyncd
-- [ ] Configurar sincronizaci&#243;n horaria de hipervisores ESXi
+- [x] Configurar sincronizaci&#243;n horaria de hipervisores ESXi
   - **Comando:** chkconfig ntpd; cat /etc/ntp.conf
 - [ ] Configurar sincronizaci&#243;n horaria de vCenter
   - **Captura:** Appliance vCenter 5480 / Hora
-- [ ] Configurar sincronizaci&#243;n horaria de ROUTER01-ID
+- [x] Configurar sincronizaci&#243;n horaria de ROUTER01-ID
   - **Captura:** Zentyal / Sistema / Fecha y hora
 
 </details>
@@ -605,7 +605,7 @@
 <details>
 <summary><strong>FASE - Validaci&#243;n</strong></summary>
 
-- [ ] Comprobar que DC, Linux, ESXi, vCenter y Zentyal tienen hora coherente
+- [x] Comprobar que DC, Linux, ESXi, vCenter y Zentyal tienen hora coherente
   - **Captura:** Salidas o pantallas de cada sistema
 
 </details>
@@ -623,15 +623,15 @@
 <details>
 <summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
-- [ ] Configurar pools y datasets en FILER01-ID
+- [x] Configurar pools y datasets en FILER01-ID
   - **Captura:** Storage / Pools desplegado con datasets
-- [ ] Configurar recursos SMB: usuarios$, perfiles$ y repo
+- [x] Configurar recursos SMB: usuarios$, perfiles$ y repo
   - **Captura:** Sharing / SMB con nombres y rutas
 - [ ] Configurar recursos NFS necesarios
   - **Captura:** Sharing / NFS
-- [ ] Configurar unidad Z: de usuarios en AD
+- [x] Configurar unidad Z: de usuarios en AD
   - **Captura:** Usuario / Propiedades / Perfil / Carpeta particular
-- [ ] Configurar perfiles m&#243;viles para miembros del grupo gestion
+- [x] Configurar perfiles m&#243;viles para miembros del grupo gestion
   - **Captura:** Usuario gestion / Propiedades / Perfil / Perfil de usuario
 
 </details>
@@ -639,7 +639,7 @@
 <details>
 <summary><strong>FASE - Validaci&#243;n</strong></summary>
 
-- [ ] Abrir \\FILER01-ID\usuarios$ desde explorador
+- [] Abrir \\FILER01-ID\usuarios$ desde explorador
   - **Captura:** Contenido del recurso compartido
 - [ ] Abrir \\FILER01-ID\perfiles$ desde explorador
   - **Captura:** Contenido del recurso compartido
@@ -669,7 +669,7 @@
 <details>
 <summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
-- [ ] Crear esquema Visio de red interna, conexi&#243;n externa e Internet
+- [x] Crear esquema Visio de red interna, conexi&#243;n externa e Internet
   - **Entregable:** docs/esquemas/red/
 - [ ] Crear esquema Visio de conexi&#243;n con Azure y redes Azure
   - **Entregable:** docs/esquemas/red/
@@ -677,7 +677,7 @@
   - **Entregable:** docs/esquemas/red/docker/
 - [ ] Crear esquema de Active Directory: dominio, UO, grupos principales y controladores
   - **Entregable:** docs/esquemas/AD/
-- [ ] Crear esquema E-R de la aplicaci&#243;n inventario
+- [x] Crear esquema E-R de la aplicaci&#243;n inventario
   - **Entregable:** docs/esquemas/BD/
 - [ ] Crear dise&#241;o de tablas de la base de datos inventario
   - **Entregable:** docs/esquemas/BD/
@@ -705,7 +705,7 @@
 <details>
 <summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
-- [ ] Crear carpeta ra&#237;z: Entrega proyecto final m&#243;dulo ASIR Nombre y apellidos
+- [x] Crear carpeta ra&#237;z: Entrega proyecto final m&#243;dulo ASIR Nombre y apellidos
   - **Entregable:** Carpeta ra&#237;z del ZIP
 - [ ] Crear docs/informe con el PDF final del informe
   - **Entregable:** docs/informe/Proyecto_intermodular_2ASIR.informe.Nombre y apellidos.pdf
@@ -719,13 +719,13 @@
   - **Entregable:** scripts/powershell/
 - [ ] Copiar scripts PowerCLI si existen
   - **Entregable:** scripts/powercli/
-- [ ] Copiar scripts SQL DDL
+- [x] Copiar scripts SQL DDL
   - **Entregable:** scripts/sql/DDL/
-- [ ] Copiar scripts SQL DML, triggers, procedimientos y funciones
+- [x] Copiar scripts SQL DML, triggers, procedimientos y funciones
   - **Entregable:** scripts/sql/DML/
-- [ ] Copiar c&#243;digo fuente propio de la aplicaci&#243;n inventario
+- [x] Copiar c&#243;digo fuente propio de la aplicaci&#243;n inventario
   - **Entregable:** apps/inventario/
-- [ ] Copiar archivos Docker y configuraci&#243;n relacionada
+- [x] Copiar archivos Docker y configuraci&#243;n relacionada
   - **Entregable:** archivos/docker/docker-compose.yml, Dockerfiles, nginx, .env de ejemplo sin secretos
 - [ ] Copiar archivos JSON/YAML necesarios
   - **Entregable:** archivos/

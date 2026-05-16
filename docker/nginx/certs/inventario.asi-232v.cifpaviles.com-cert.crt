@@ -1,0 +1,83 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            cd:c2:e8:56:36:7d:ea:e7
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=ES, ST=ASTURIAS, L=AVILES, O=CA01-232V, CN=Certification Authority Certificate
+        Validity
+            Not Before: May  8 17:22:16 2026 GMT
+            Not After : May  5 16:35:52 2036 GMT
+        Subject: C=ES, ST=ASTURIAS, L=AVILES, O=CA01-232V, CN=inventario.asi-232v.cifpaviles.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:cd:50:85:6d:17:6a:bc:8f:70:31:68:35:88:0d:
+                    e3:57:b3:35:2b:b5:32:fd:15:cc:5b:fe:10:d7:7f:
+                    6f:a4:75:9e:23:e5:84:a8:e3:b1:6b:4b:a4:0b:9e:
+                    47:77:b8:39:0f:5f:52:f2:1b:cb:8b:b0:1e:b2:29:
+                    31:1e:3d:7d:53:dc:58:51:81:48:b7:bb:d8:d8:bf:
+                    d9:3d:c8:f1:f1:29:14:10:2c:ae:0d:3c:00:09:f7:
+                    ec:96:80:c8:f8:19:fb:50:bf:51:97:02:be:cc:c5:
+                    26:77:84:72:a1:47:e7:f0:a2:ae:c7:69:62:ae:5e:
+                    9b:9a:9b:e2:a0:2b:e9:a6:15:f2:6a:da:c8:ae:ec:
+                    21:44:85:a0:da:bd:ad:9f:0a:42:35:62:98:e1:1a:
+                    fa:44:01:e1:4a:01:89:33:eb:d7:63:c3:7a:d9:51:
+                    57:ac:91:6e:c3:d8:66:76:cc:cc:6c:d0:78:58:c9:
+                    6b:fc:55:1f:79:da:85:ae:e0:e3:fc:5a:cf:a1:e2:
+                    95:08:9d:8c:ee:f8:d0:14:ab:87:c4:fc:2a:cc:9e:
+                    73:48:74:0a:48:a9:ef:8f:75:f3:0d:4e:4f:88:9e:
+                    64:b4:46:ff:dd:55:f1:5a:40:6a:77:3f:83:dd:48:
+                    dc:28:db:ec:e1:07:ee:ff:21:e3:2c:54:7d:e0:c8:
+                    74:1b
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                keyid:ED:77:CD:78:75:C7:EB:97:7F:F9:53:0F:8C:1E:FB:6F:69:F1:FC:39
+
+            X509v3 Subject Key Identifier: 
+                9D:EA:17:AD:1B:4C:64:A5:8B:7A:95:FD:06:AA:81:F5:77:50:0D:95
+            Netscape Comment: 
+                OpenSSL Generated Certificate
+            X509v3 Basic Constraints: 
+                CA:FALSE
+    Signature Algorithm: sha256WithRSAEncryption
+         6f:22:2a:e9:57:61:e2:e4:bc:f7:cc:7a:bd:c4:74:11:d2:59:
+         f7:f7:60:47:88:4d:58:d9:7a:44:ad:f5:c5:08:51:ef:01:97:
+         6b:ed:72:bf:67:54:f0:36:63:f0:ff:e7:d4:43:3e:28:2c:04:
+         00:36:18:93:84:18:89:91:fb:51:71:9f:b8:46:2b:4e:3a:4d:
+         09:44:44:44:99:2f:3d:8c:b7:8c:54:38:e9:55:f7:d8:0d:0f:
+         3b:91:b3:8a:67:9b:0a:2d:ba:2c:89:3e:32:70:1b:1d:b6:d7:
+         13:03:c3:34:5c:e4:22:2b:1c:64:44:31:8d:ec:3f:d9:07:4f:
+         6f:6c:f5:2e:27:f7:7a:c7:00:4a:2d:cd:d1:e8:6e:38:1d:66:
+         60:e9:95:97:53:1c:28:bd:b8:cb:58:03:ce:49:d9:40:a2:e6:
+         10:01:23:02:e3:65:75:08:92:83:79:06:7a:5a:a8:db:83:a9:
+         8b:d5:0a:98:ce:fd:8b:0d:a8:46:47:7e:89:7f:18:ad:62:75:
+         02:06:3d:77:4e:cc:59:e5:72:b9:53:b6:a5:46:18:f1:ac:6e:
+         11:e7:6a:c5:d2:01:0a:7f:46:55:06:eb:0e:1e:32:92:b0:ee:
+         d0:ad:ef:ba:36:13:91:b0:de:b4:2b:df:3b:e2:07:d0:f6:f5:
+         ad:d2:a0:ff
+-----BEGIN CERTIFICATE-----
+MIID4zCCAsugAwIBAgIJAM3C6FY2fernMA0GCSqGSIb3DQEBCwUAMHMxCzAJBgNV
+BAYTAkVTMREwDwYDVQQIEwhBU1RVUklBUzEPMA0GA1UEBxMGQVZJTEVTMRIwEAYD
+VQQKEwlDQTAxLTIzMlYxLDAqBgNVBAMTI0NlcnRpZmljYXRpb24gQXV0aG9yaXR5
+IENlcnRpZmljYXRlMB4XDTI2MDUwODE3MjIxNloXDTM2MDUwNTE2MzU1MlowcjEL
+MAkGA1UEBhMCRVMxETAPBgNVBAgTCEFTVFVSSUFTMQ8wDQYDVQQHEwZBVklMRVMx
+EjAQBgNVBAoTCUNBMDEtMjMyVjErMCkGA1UEAxMiaW52ZW50YXJpby5hc2ktMjMy
+di5jaWZwYXZpbGVzLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB
+AM1QhW0XaryPcDFoNYgN41ezNSu1Mv0VzFv+ENd/b6R1niPlhKjjsWtLpAueR3e4
+OQ9fUvIby4uwHrIpMR49fVPcWFGBSLe72Ni/2T3I8fEpFBAsrg08AAn37JaAyPgZ
++1C/UZcCvszFJneEcqFH5/CirsdpYq5em5qb4qAr6aYV8mrayK7sIUSFoNq9rZ8K
+QjVimOEa+kQB4UoBiTPr12PDetlRV6yRbsPYZnbMzGzQeFjJa/xVH3naha7g4/xa
+z6HilQidjO740BSrh8T8Ksyec0h0Ckip74918w1OT4ieZLRG/91V8VpAanc/g91I
+3Cjb7OEH7v8h4yxUfeDIdBsCAwEAAaN7MHkwHwYDVR0jBBgwFoAU7XfNeHXH65d/
++VMPjB77b2nx/DkwHQYDVR0OBBYEFJ3qF60bTGSli3qV/QaqgfV3UA2VMCwGCWCG
+SAGG+EIBDQQfFh1PcGVuU1NMIEdlbmVyYXRlZCBDZXJ0aWZpY2F0ZTAJBgNVHRME
+AjAAMA0GCSqGSIb3DQEBCwUAA4IBAQBvIirpV2Hi5Lz3zHq9xHQR0ln392BHiE1Y
+2XpErfXFCFHvAZdr7XK/Z1TwNmPw/+fUQz4oLAQANhiThBiJkftRcZ+4RitOOk0J
+REREmS89jLeMVDjpVffYDQ87kbOKZ5sKLbosiT4ycBsdttcTA8M0XOQiKxxkRDGN
+7D/ZB09vbPUuJ/d6xwBKLc3R6G44HWZg6ZWXUxwovbjLWAPOSdlAouYQASMC42V1
+CJKDeQZ6Wqjbg6mL1QqYzv2LDahGR36JfxitYnUCBj13TsxZ5XK5U7alRhjxrG4R
+52rF0gEKf0ZVBusOHjKSsO7Qre+6NhORsN60K9874gfQ9vWt0qD/
+-----END CERTIFICATE-----

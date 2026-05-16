@@ -12,40 +12,18 @@ Grupo servidor: 8
 ## 0. Preparaci&#243;n del informe y criterio de entrega
 
 <details>
-<summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
-- [ ] Crear carpeta de trabajo para capturas con nombres por apartado del informe
-  - **Entregable:** docs/informe/capturas/
-- [ ] Definir convenci&#243;n de nombres para capturas: numero-apartado-maquina-descripcion.png
-  - **Nota:** Ejemplo: 03-router01-ip-address.png
+
+- [x] Crear carpetas de trabajo para .zip
 - [ ] Preparar documento final desde Proyecto_intermodular_2ASIR.informe.docx
   - **Entregable:** docs/informe/Proyecto_intermodular_2ASIR.informe.Nombre_Apellidos.pdf
-- [ ] Anotar que esta infraestructura act&#250;a como entorno de producci&#243;n cuando el enunciado distinga desarrollo/pruebas y producci&#243;n
-  - **Informe:** Observaciones generales del informe
-
-</details>
-
-<details>
-<summary><strong>FASE - Validaci&#243;n</strong></summary>
-
 - [ ] Revisar que cada captura usa FQDN cuando el informe pide imagen de una URL
-  - **Informe:** Instrucciones de la plantilla
 - [ ] Separar evidencias que conviene pegar como texto de las que conviene pegar como imagen
   - **Nota:** La plantilla recomienda texto para archivos grandes.
-- [ ] Mantener una tabla de correspondencia entre captura, apartado del informe y m&#225;quina
-  - **Entregable:** docs/informe/indice-capturas.md o equivalente
-
-</details>
-
-<details>
-<summary><strong>FASE - Informe</strong></summary>
-
-- [ ] Rellenar portada: fecha, nombre, host de virtualizaci&#243;n, grupo y puesto de aula
-  - **Informe:** Cabecera del informe
+- [x] Rellenar portada: fecha, nombre, host de virtualizaci&#243;n, grupo y puesto de aula
 - [ ] Completar el apartado Credenciales con el m&#233;todo de gesti&#243;n, sin exponer contrase&#241;as innecesarias
   - **Informe:** Credenciales (usuarios y contrase&#241;as)
 - [ ] Completar Otros con ampliaciones, limitaciones y observaciones finales
-  - **Informe:** Otros
 
 </details>
 
@@ -54,13 +32,13 @@ Grupo servidor: 8
 <details>
 <summary><strong>FASE - Implementaci&#243;n</strong></summary>
 
-- [ ] Comprobar que todas las m&#225;quinas siguen la nomenclatura con sufijo ID
+- [x] Comprobar que todas las m&#225;quinas siguen la nomenclatura con sufijo ID
   - **Informe:** Nombrado de m&#225;quinas virtuales
-- [ ] Ubicar todas las m&#225;quinas en la carpeta proyecto de vCenter
+- [x] Ubicar todas las m&#225;quinas en la carpeta proyecto de vCenter
   - **Captura:** Inventario de m&#225;quinas en VMware vCenter mostrando carpeta proyecto y nombres
 - [ ] Rellenar Summary/Annotations en cada m&#225;quina virtual
   - **Captura:** Atributos y texto de notas de cada VM
-- [ ] Comprobar que cada m&#225;quina est&#225; conectada a su red LAN virtual correcta
+- [x] Comprobar que cada m&#225;quina est&#225; conectada a su red LAN virtual correcta
   - **Informe:** Ubicaci&#243;n de m&#225;quinas en redes
 
 </details>

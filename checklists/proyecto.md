@@ -1,13 +1,3 @@
-# Proyecto Intermodular ASIR 232V
-
-Alumno: Judith Gallego Martínez  
-Dominio AD: asi-232V.cifpaviles.com  
-NETBIOS: ASI-232V  
-Servidor virtualización: 31  
-Grupo servidor: 8  
-
----
-
 
 ## 0. Preparaci&#243;n del informe y criterio de entrega
 

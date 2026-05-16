@@ -1,6 +1,6 @@
 # proyecto-intermodular-232V
 
-Repositorio del proyecto intermodular ASIR.
+Intentando no conformarme solo con los mínimos del proyecto.
 
 ---
 
